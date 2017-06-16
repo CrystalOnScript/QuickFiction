@@ -1,0 +1,96 @@
+
+<html>
+  <head>
+    <title>Quick Fiction</title>
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        height: 500px;
+        width: 500px;
+        font-family: 'Spectral', serif;
+        font-size: 100%;
+        background-color: #009699;
+      }
+      #letsWrite{
+        display: none;
+      }
+      #displayCounter{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 50px;
+        width: 200px;
+        /*background-color: green;*/
+      }
+      #logoload {
+        width: 400px;
+        display: block;
+        margin: auto;
+      }
+      #writeDiv{
+        display: none;
+        text-align: center;
+      }
+
+      #aboutQF{
+        text-align: center;
+        color: white;
+      }
+      #situationHolder {
+        background-color: white;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+
+      #saveText{
+        display: none;
+        position: relative;
+        top: 10px;
+        left: 190px;
+      }
+
+    </style>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="loadDiv" class="container">
+        <img src="qfblue.png" id="logoload"/>
+        <section id="aboutQF">
+          <h2>Quick Fiction, Beta</h2>
+          <p>Quick Fiction will provide a character and a situation.</p>
+          <p>Press start and you'll have 5 minutes to write as much as you can.</p>
+          <p>Good luck and have fun!</p>
+          <button id="changeDiv" class="btn btn-secondary">Story Time</button>
+        </section>
+    </div>
+
+    <div id="displayCounter"></div>
+
+    <div id="writeDiv" class="container">
+      <div id="situationHolder">
+        <section class="text-center">
+          <span id="character"> </span>
+        </section>
+        <section class="text-center">
+          <span id="situation"></span>
+        </section>
+      </div>
+      <div>
+        <div id="storyDone"></div>
+        <button id="startWrite" class="btn btn-secondary">Start Writing!</button>
+      </div>
+      <div id="letsWrite" class="center-block">
+        <textarea rows="8" cols="56" id="textEnter"> </textarea>
+
+      </div>
+      <button id="saveText" class="btn btn-secondary center-block">Finish</button>
+
+    </div>
+
+
+
+
+  </body>
+</html>
