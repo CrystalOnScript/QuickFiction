@@ -14,7 +14,7 @@ Quick Fiction is in Beta. Currently, Quick Fiction only preforms the basic goal 
 
 ## Installation
 
-At this time, Quick Fiction is not available in the Chrome Extension store, however, you can still install it locally in developer mode if you would like to try it out.
+At this time, Quick Fiction is not available in the Chrome Extension store, however, you can still install it locally in developer mode.
 
 1. Clone the Git Repository to your local machine.
     * More information on Git and cloning can be found here: [Git Basics, Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
@@ -41,7 +41,7 @@ You can also add to the characters and situations array found in "popup.js".
   ["example one", "example two"]
   ```
 4. Save your updates.
-5. Navigate back to 'chrome://extensions' in your Chrome browser.
+5. Navigate back to "chrome://extensions" in your Chrome browser.
 6. Select "Reload" under "Quick Fiction"
 7. Your new characters and situations will now be included in the randomization!
 
