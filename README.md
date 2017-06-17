@@ -36,7 +36,10 @@ You can also add to the characters and situations array found in "popup.js".
 1. Open "popup.js" in your favorite text editor.
   1a. You can use "TextEdit" for this if you are on a Mac, or "Notepad" if using Windows
 2. The arrays are the first variables on the page. Characters are inside of "charactersArray" and situations in "situationArray".
-3. You can insert a character or situation to the appropriate array by placing it inside of quotes: "", with a comma after. Make sure you have placed this inside of the brackets: [].  
+3. You can insert a character or situation to the appropriate array by placing it inside of quotes: "", with a comma after. Make sure you have placed this inside of the brackets: [].
+  ```
+  ["example one", "example two"]
+  ```
 4. Save your updates.
 5. Navigate back to 'chrome://extensions' in your Chrome browser.
 6. Select "Reload" under "Quick Fiction"
@@ -44,19 +47,25 @@ You can also add to the characters and situations array found in "popup.js".
 
 
 ## Next Steps
+
 ### More Characters and Situations
+
   In the future, Quick Fiction will never give you the same combination twice! The library of characters and situations will be expanded.
 
 ### Randomization Button  
+
   The ability to ask for a new character and situation if the one provided doesn't spark any creativity. At this time, you can also achieve this by exiting and reopening the popup - but that isn't nearly as fun as buttons.
 
 ### Story persistence
+
   Currently, Quick Fiction is unable to store user stories. The next step is to create a hub for each user to revisit past exercises, edit them, and continue writing if they wish.
 
 ### Formatting
+
     Quick Fiction only captures characters and not formatting, which means stories are returned to the user in a block of text. This will be updated to keep line breaks and common formatting.
 
 ### Launch to store  
+
     Enable everyone to install Quick Fiction on their browsers. Hooray!
 
 
