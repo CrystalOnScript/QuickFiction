@@ -19,9 +19,9 @@ At this time, Quick Fiction is not available in the Chrome Extension store, howe
 1. Clone the GIT Repository to your local machine.
   * More information on GIT and cloning can be found here: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 2. Visit "chrome://extensions" in your browser
-  1. You can also access this by selecting Omnibox (menu) in the upper right-hand corner of the browser
-  2. Hover over "Tools"
-  3. Select "Extensions"
+    1. You can also access this by selecting Omnibox (menu) in the upper right-hand corner of the browser
+    2. Hover over "Tools"
+    3. Select "Extensions"
 3. Check the "Developer Mode" box located in the upper right-hand side of the page.
 4. Click "Load unpacked extension..."
 5. Select from you local files "QuickFiction"
@@ -34,7 +34,7 @@ At this time, Quick Fiction is not available in the Chrome Extension store, howe
 You can also add to the characters and situations array found in "popup.js".
 
 1. Open "popup.js" in your favorite text editor.
-  1a. You can use "TextEdit" for this if you are on a Mac, or "Notepad" if using Windows
+  * You can use "TextEdit" for this if you are on a Mac, or "Notepad" if using Windows
 2. The arrays are the first variables on the page. Characters are inside of "charactersArray" and situations in "situationArray".
 3. You can insert a character or situation to the appropriate array by placing it inside of quotes: "", with a comma after. Make sure you have placed this inside of the brackets: [].
   ```
