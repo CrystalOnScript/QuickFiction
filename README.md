@@ -50,23 +50,23 @@ You can also add to the characters and situations array found in "popup.js".
 
 ### More Characters and Situations
 
-  In the future, Quick Fiction will never give you the same combination twice! The library of characters and situations will be expanded.
+In the future, Quick Fiction will never give you the same combination twice! The library of characters and situations will be expanded.
 
 ### Randomization Button  
 
-  The ability to ask for a new character and situation if the one provided doesn't spark any creativity. At this time, you can also achieve this by exiting and reopening the popup - but that isn't nearly as fun as buttons.
+The ability to ask for a new character and situation if the one provided doesn't spark any creativity. At this time, you can also achieve this by exiting and reopening the popup - but that isn't nearly as fun as buttons.
 
 ### Story persistence
 
-  Currently, Quick Fiction is unable to store user stories. The next step is to create a hub for each user to revisit past exercises, edit them, and continue writing if they wish.
+Currently, Quick Fiction is unable to store user stories. The next step is to create a hub for each user to revisit past exercises, edit them, and continue writing if they wish.
 
 ### Formatting
 
-    Quick Fiction only captures characters and not formatting, which means stories are returned to the user in a block of text. This will be updated to keep line breaks and common formatting.
+Quick Fiction only captures characters and not formatting, which means stories are returned to the user in a block of text. This will be updated to keep line breaks and common formatting.
 
 ### Launch to store  
 
-    Enable everyone to install Quick Fiction on their browsers. Hooray!
+Enable everyone to install Quick Fiction on their browsers. Hooray!
 
 
 ## Contact    
