@@ -14,14 +14,14 @@ Quick Fiction is in Beta. Currently, Quick Fiction only preforms the basic goal 
 
 ## Installation
 
-At this time, Quick Fiction is not available in the Chrome Extension store, however, you can still install it locally in developer mode if you'd like to try it out.
+At this time, Quick Fiction is not available in the Chrome Extension store, however, you can still install it locally in developer mode if you would like to try it out.
 
 1. Clone the GIT Repository to your local machine.
-  1a. More information on GIT and cloning can be found here: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+  * More information on GIT and cloning can be found here: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 2. Visit "chrome://extensions" in your browser
-  2a. You can also access this by selecting Omnibox (menu) in the upper right-hand corner of the browser
-  2b. Hover over "Tools"
-  2c. Select "Extensions"
+  1. You can also access this by selecting Omnibox (menu) in the upper right-hand corner of the browser
+  2. Hover over "Tools"
+  3. Select "Extensions"
 3. Check the "Developer Mode" box located in the upper right-hand side of the page.
 4. Click "Load unpacked extension..."
 5. Select from you local files "QuickFiction"
