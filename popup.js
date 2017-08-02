@@ -52,19 +52,22 @@ document.addEventListener('DOMContentLoaded', function() {
       // display the seconds and round minutes. Choose to do this so writer wouldn't be distracted by count down
       var minutes = Math.floor(seconds_left / 60);
 
-        // displays div with counter
-        $("#displayCounter").html("Minutes left: " + minutes +"+");
 
-        // if time is less than one minute displays time in seconds
-        if (seconds_left <= 60)
+        // once times hits one minute a toast drops in to inform user
+        if (seconds_left === 60)
         {
-            $("#displayCounter").html("Seconds left: " +seconds_left)
+            Materialize.toast('One Minute Left!', 3000, 'rounded toastClass')
+        }
+        if (seconds_left === 30)
+        {
+            Materialize.toast('30 seconds!', 3000, 'rounded toastClass')
         }
 
-        // if time is up
+        // when time is up
         if (seconds_left === 0){
           // change display to say time is up
-          $("#displayCounter").html("Time Up!")
+          // time is up toast
+          Materialize.toast('Time is up!', 5000, 'rounded toastClass')
 
           // diclare user input
           var userStory = $("#textEnter").val();
@@ -79,10 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
           $("#saveText").css("display", "none");
         }
 
-        if(seconds_left < 0){
-          // change display to say time is up
-          $("#displayCounter").html("Time Up!")
-        }
     }, 1000);
   });
 
@@ -95,8 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // appends user story to empty div
     $("#storyDone").append("<p>"+userStory+"</p>");
 
-    // hides counter
-    $("#displayCounter").css("display", "none");
+    Materialize.toast('Great story bro!', 3000, 'rounded toastClass')
 
     // hides textarea
     $("#letsWrite").css("display", "none");
