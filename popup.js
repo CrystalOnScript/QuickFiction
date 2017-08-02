@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // if time is up
-        if (seconds_left <= 0){
+        if (seconds_left === 0){
           // change display to say time is up
           $("#displayCounter").html("Time Up!")
 
@@ -77,6 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
           $("#letsWrite").css("display","none");
           // hides save button
           $("#saveText").css("display", "none");
+        }
+
+        if(seconds_left < 0){
+          // change display to say time is up
+          $("#displayCounter").html("Time Up!")
         }
     }, 1000);
   });

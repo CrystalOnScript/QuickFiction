@@ -4,10 +4,12 @@
   "name": "Quick Fiction",
   "description": "Stream of consciousness writing exercise",
   "version": "1.0",
-
+  "chrome_url_overrides" : {
+   "newtab": "popup.html"
+ },
   "browser_action": {
     "default_icon": "qfsmall.png",
-    "default_popup": "popup.html",
+
     "default_title": "Creativty Flows!"
   },
   "permissions": [

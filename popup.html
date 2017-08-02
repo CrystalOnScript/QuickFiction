@@ -1,16 +1,18 @@
 
 <html>
   <head>
-    <title>Quick Fiction</title>
+    <title>New Tab</title>
     <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="materialize.min.css" rel="stylesheet">
     <style>
       body {
         height: 500px;
         width: 500px;
-        font-family: 'Spectral', serif;
+        /*font-family: 'Spectral', serif;*/
         font-size: 100%;
-        background-color: #009699;
+        background-color: white;
+        /*background-color: #009699;*/
+        background-image: url("linedpaper.png");
       }
       #letsWrite{
         display: none;
@@ -21,7 +23,6 @@
         top: 0px;
         height: 50px;
         width: 200px;
-        /*background-color: green;*/
       }
       #logoload {
         width: 400px;
@@ -35,10 +36,9 @@
 
       #aboutQF{
         text-align: center;
-        color: white;
       }
       #situationHolder {
-        background-color: white;
+        /*background-color: white;*/
         margin-top: 50px;
         margin-bottom: 10px;
       }
@@ -47,28 +47,33 @@
         display: none;
         position: relative;
         top: 10px;
-        left: 190px;
+        left: 160px;
       }
-
+      #textEnter{
+        height: 200px;
+      }
+/* color of QF logo #009699*/
     </style>
     <script src="jquery-3.2.1.min.js"></script>
     <script src="popup.js"></script>
   </head>
-  <body>
-    <div id="loadDiv" class="container">
-        <img src="qfblue.png" id="logoload"/>
-        <section id="aboutQF">
-          <h2>Quick Fiction, Beta</h2>
-          <p>Quick Fiction will provide a character and a situation.</p>
-          <p>Press start and you'll have 5 minutes to write as much as you can.</p>
-          <p>Good luck and have fun!</p>
-          <button id="changeDiv" class="btn btn-secondary">Story Time</button>
-        </section>
+  <body class="container">
+    <img src="quickFiction.png" id="logoload"/>
+    <div id="loadDiv" class="row">
+        <div class="col s6 offset-s3">
+          <section id="aboutQF">
+            <!-- <h2>Quick Fiction, Beta</h2> -->
+            <p>Quick Fiction will provide a character and a situation.</p>
+            <p>Press start and you'll have 5 minutes to write as much as you can.</p>
+            <p>Good luck and have fun!</p>
+            <button id="changeDiv" class="waves-effect waves-light btn #ffd981 amber accent-1">Story Time</button>
+          </section>
+        </div>
     </div>
 
     <div id="displayCounter"></div>
 
-    <div id="writeDiv" class="container">
+    <div id="writeDiv" class="row">
       <div id="situationHolder">
         <section class="text-center">
           <span id="character"> </span>
@@ -79,16 +84,19 @@
       </div>
       <div>
         <div id="storyDone"></div>
-        <button id="startWrite" class="btn btn-secondary">Start Writing!</button>
+        <button id="startWrite" class="waves-effect waves-light btn #ffd981 amber accent-1">Start Writing!</button>
       </div>
-      <div id="letsWrite" class="center-block">
-        <textarea rows="8" cols="56" id="textEnter"> </textarea>
 
-      </div>
-      <button id="saveText" class="btn btn-secondary center-block">Finish</button>
 
     </div>
+    <div class="row">
+      <div id="letsWrite" class="center-block col s6 offset-s3">
+        <textarea rows="50" cols="50" id="textEnter"> </textarea>
+        <br>
+        <button id="saveText" class="waves-effect waves-light btn #ffd981 amber accent-1">Finish</button>
+      </div>
 
+    </div>
 
 
 

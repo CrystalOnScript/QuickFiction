@@ -3,7 +3,7 @@ Google Chrome Extension - Quick Writing Exercise
 
 ### Quick Fiction, What is it?
 
-Quick Fiction is a writing exercise inside Google Chrome Popup Extension. Quick Fiction randomly selects a character and a situation then provides the user 5 minutes and a text box. The goal is to write as much as you can within the 5 minute window. Once time is up Quick Fiction displays the user input as plain text within the popup. Users can copy and paste their story into their drive or a word document to work on later, or simply close out the popup.
+Quick Fiction is a writing exercise inside Google Chrome Tab Override Extension. Quick Fiction randomly selects a character and a situation then provides the user 5 minutes and a text box. The goal is to write as much as you can within the 5 minute window. Once time is up Quick Fiction displays the user input as plain text within the popup. Users can copy and paste their story into their drive or a word document to work on later, or simply close out the popup.
 
 Quick Fiction exists to provide a moment of creativity and designed to encourage stream of consciousness writing. You only have 5 minutes! Don't overthink it! Good luck and have fun.
 
