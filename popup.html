@@ -17,9 +17,9 @@
       #letsWrite{
         display: none;
       }
-      
+
       #logoload {
-        width: 400px;
+        width: 350px;
         display: block;
         margin: auto;
       }
@@ -32,19 +32,19 @@
         text-align: center;
       }
       #situationHolder {
-        /*background-color: white;*/
+        text-align: center;
         margin-top: 50px;
         margin-bottom: 10px;
       }
 
       #saveText{
         display: none;
-        position: relative;
-        top: 10px;
-        left: 160px;
       }
       #textEnter{
         height: 200px;
+      }
+      #whatIsButton{
+        margin-top: 2px;
       }
 
       .toastClass{
@@ -57,43 +57,56 @@
     <script src="popup.js"></script>
   </head>
   <body class="container">
+    <a id="whatIsButton" href="#modal1" class="btn btn-floating btn-small waves-effect waves-light #ffd981 amber accent-1 modal-trigger">?</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h3>Quick Fiction, what is it?</h3>
+        <p>Quick Fiction is a writing exercise inside Google Chrome Tab Override Extension. Quick Fiction randomly selects a character and a situation then provides the user five minutes and a text box. The goal is to write as much as you can within the five minute window. Once time is up Quick Fiction displays the user input as plain text on the page. Users can copy and paste their story into their drive to work on later, or simply move on to a new page.</p>
+
+        <p>Quick Fiction exists to provide a moment of creativity and designed to encourage stream of consciousness writing. You only have five minutes! Don't overthink it! Good luck and have fun.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+
     <img src="quickFiction.png" id="logoload"/>
     <div id="loadDiv" class="row">
         <div class="col s6 offset-s3">
-          <section id="aboutQF">
-            <!-- <h2>Quick Fiction, Beta</h2> -->
-            <p>Quick Fiction will provide a character and a situation.</p>
-            <p>Press start and you'll have 5 minutes to write as much as you can.</p>
-            <p>Good luck and have fun!</p>
-            <button id="changeDiv" class="waves-effect waves-light btn #ffd981 amber accent-1">Story Time</button>
-          </section>
+          <div id="situationHolder">
+            <section class="text-center">
+              <p id="character"> </p>
+            </section>
+            <section class="text-center">
+              <p id="situation"></p>
+            </section>
+          </div>
+            <div id="storyDone"></div>
+
         </div>
     </div>
-
-    <div id="writeDiv" class="row">
-      <div id="situationHolder">
-        <section class="text-center">
-          <span id="character"> </span>
-        </section>
-        <section class="text-center">
-          <span id="situation"></span>
-        </section>
+    <div class="row">
+      <div class="center-block col s2 offset-s5">
+          <button id="startWrite" class="waves-effect waves-light btn #ffd981 amber accent-1">Start Writing!</button>
       </div>
-      <div>
-        <div id="storyDone"></div>
-        <button id="startWrite" class="waves-effect waves-light btn #ffd981 amber accent-1">Start Writing!</button>
-      </div>
-
-
     </div>
+
+    <div id="writeDiv" class="row"> </div>
+
     <div class="row">
       <div id="letsWrite" class="center-block col s6 offset-s3">
         <textarea rows="50" cols="50" id="textEnter"> </textarea>
-        <br>
-        <button id="saveText" class="waves-effect waves-light btn #ffd981 amber accent-1">Finish</button>
       </div>
 
     </div>
+    <div class="row">
+      <div class="center-block col s2 offset-s5">
+          <button id="saveText" class="waves-effect waves-light btn #ffd981 amber accent-1">Finish</button>
+      </div>
+    </div>
+
 
 
 

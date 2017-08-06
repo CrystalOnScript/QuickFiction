@@ -15,6 +15,10 @@ function chooseFromArray(array){
 
 // listens for the page to load
 document.addEventListener('DOMContentLoaded', function() {
+
+  $("#whatIsButton").click(function(){
+    $('.modal').modal();
+  })
   // updated view when start button is clicked
   $("#changeDiv").click(function(){
     $("#loadDiv").css("display", "none");
@@ -33,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // hides startwrite button
     $("#startWrite").css("display", "none");
+    $("#logoload").css("display", "none");
 
       // displays div with textbox
     $("#letsWrite").css("display","block");
@@ -83,24 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
     }, 1000);
+
+
+    // save text option for users that finish before 5 minutes
+    $("#saveText").click(function(){
+
+      // saves user story
+      var userStory = $("#textEnter").val();
+
+      // appends user story to empty div
+      $("#storyDone").append("<p>"+userStory+"</p>");
+
+      Materialize.toast('Great story bro!', 3000, 'rounded toastClass')
+
+      // hides textarea
+      $("#letsWrite").css("display", "none");
+      // hides save button
+      $("#saveText").css("display", "none");
+      clearTimeout(interval);
+    })
   });
 
-  // save text option for users that finish before 5 minutes
-  $("#saveText").click(function(){
 
-    // saves user story
-    var userStory = $("#textEnter").val();
-
-    // appends user story to empty div
-    $("#storyDone").append("<p>"+userStory+"</p>");
-
-    Materialize.toast('Great story bro!', 3000, 'rounded toastClass')
-
-    // hides textarea
-    $("#letsWrite").css("display", "none");
-    // hides save button
-    $("#saveText").css("display", "none");
-  })
 
 
 
